@@ -792,6 +792,14 @@ require('lazy').setup({
   --   end,
   -- },
 
+  {
+    'rebelot/kanagawa.nvim',
+    priority = 1000,
+    init = function()
+      vim.cmd.colorscheme 'kanagawa'
+    end,
+  },
+
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
@@ -908,8 +916,6 @@ require('lazy').setup({
     },
   },
 })
-
-vim.cmd.colorscheme 'habamax'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
