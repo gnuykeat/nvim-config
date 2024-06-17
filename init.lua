@@ -792,11 +792,19 @@ require('lazy').setup({
   --   end,
   -- },
 
+  -- {
+  --   'rebelot/kanagawa.nvim',
+  --   priority = 1000,
+  --   init = function()
+  --     vim.cmd.colorscheme 'kanagawa'
+  --   end,
+  -- },
+
   {
-    'rebelot/kanagawa.nvim',
+    'shaunsingh/nord.nvim',
     priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'kanagawa'
+      vim.cmd.colorscheme 'nord'
     end,
   },
 
