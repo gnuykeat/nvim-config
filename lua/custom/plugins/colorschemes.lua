@@ -37,6 +37,11 @@ return {
     'gbprod/nord.nvim',
     priority = 1000,
     init = function()
+      require('nord').setup {
+        styles = {
+          functions = { italic = true },
+        },
+      }
       vim.cmd.colorscheme 'nord'
     end,
   },
