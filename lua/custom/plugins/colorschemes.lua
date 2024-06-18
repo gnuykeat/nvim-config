@@ -25,24 +25,24 @@ return {
   --   end,
   -- },
 
-  -- {
-  --   'shaunsingh/nord.nvim',
-  --   priority = 1000,
-  --   init = function()
-  --     vim.cmd.colorscheme 'nord'
-  --   end,
-  -- },
-
   {
-    'gbprod/nord.nvim',
+    'shaunsingh/nord.nvim',
     priority = 1000,
     init = function()
-      require('nord').setup {
-        styles = {
-          functions = { italic = true },
-        },
-      }
       vim.cmd.colorscheme 'nord'
     end,
   },
+
+  -- {
+  --   'gbprod/nord.nvim',
+  --   priority = 1000,
+  --   init = function()
+  --     require('nord').setup {
+  --       styles = {
+  --         functions = { italic = true },
+  --       },
+  --     }
+  --     vim.cmd.colorscheme 'nord'
+  --   end,
+  -- },
 }
