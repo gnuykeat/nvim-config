@@ -199,6 +199,8 @@ vim.keymap.set('n', ']q', vim.cmd.cnext, { desc = 'Go to next [Q]uickfix item' }
 -- Buffer movements
 vim.keymap.set('n', '[b', vim.cmd.bprevious, { desc = 'Go to previous [B]uffer' })
 vim.keymap.set('n', ']b', vim.cmd.bnext, { desc = 'Go to next [B]uffer' })
+-- (More minimal) List of buffers
+vim.keymap.set('n', '<leader>b', '<cmd>ls<cr>:b<space>', { desc = 'Show the list of [B]uffers.' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
