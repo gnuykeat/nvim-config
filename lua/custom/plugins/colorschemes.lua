@@ -28,8 +28,16 @@ return {
   {
     'shaunsingh/nord.nvim',
     priority = 1000,
+    -- init = function()
+    --   vim.cmd.colorscheme 'nord'
+    -- end,
+  },
+
+  {
+    'EdenEast/nightfox.nvim',
+    priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'nord'
+      vim.cmd.colorscheme 'terafox'
     end,
   },
 
