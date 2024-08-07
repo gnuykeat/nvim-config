@@ -44,8 +44,19 @@ return {
   {
     'rebelot/kanagawa.nvim',
     priority = 1000,
-    init = function()
-      vim.cmd.colorscheme 'kanagawa-dragon'
+    -- init = function()
+    --   vim.cmd.colorscheme 'kanagawa-dragon'
+    -- end,
+  },
+
+  {
+    'maxmx03/solarized.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.o.background = 'dark' -- or 'light'
+
+      vim.cmd.colorscheme 'solarized'
     end,
   },
 }
