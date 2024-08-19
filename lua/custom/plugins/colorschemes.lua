@@ -36,9 +36,9 @@ return {
   {
     'EdenEast/nightfox.nvim',
     priority = 1000,
-    -- init = function()
-    --   vim.cmd.colorscheme 'terafox'
-    -- end,
+    init = function()
+      vim.cmd.colorscheme 'terafox'
+    end,
   },
 
   {
@@ -53,10 +53,10 @@ return {
     'maxmx03/solarized.nvim',
     lazy = false,
     priority = 1000,
-    config = function()
-      vim.o.background = 'dark' -- or 'light'
-
-      vim.cmd.colorscheme 'solarized'
-    end,
+    -- config = function()
+    --   vim.o.background = 'dark' -- or 'light'
+    --
+    --   vim.cmd.colorscheme 'solarized'
+    -- end,
   },
 }
